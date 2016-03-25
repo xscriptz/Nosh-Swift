@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3027F1A91CA5A5B00018BD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1A81CA5A5B00018BD0A /* AppDelegate.swift */; };
+		3027F1AB1CA5A5B00018BD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1AA1CA5A5B00018BD0A /* ViewController.swift */; };
+		3027F1AE1CA5A5B00018BD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3027F1AC1CA5A5B00018BD0A /* Main.storyboard */; };
+		3027F1B01CA5A5B00018BD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3027F1AF1CA5A5B00018BD0A /* Assets.xcassets */; };
+		3027F1B31CA5A5B00018BD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3027F1B11CA5A5B00018BD0A /* LaunchScreen.storyboard */; };
+		3027F1BE1CA5A5B00018BD0A /* Nosh_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1BD1CA5A5B00018BD0A /* Nosh_SwiftTests.swift */; };
+		3027F1C91CA5A5B00018BD0A /* Nosh_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1C81CA5A5B00018BD0A /* Nosh_SwiftUITests.swift */; };
+		3027F1D71CA5B08A0018BD0A /* MainpageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1D61CA5B08A0018BD0A /* MainpageVC.swift */; };
+		3027F1D91CA5B3540018BD0A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1D81CA5B3540018BD0A /* LoginVC.swift */; };
+		3027F1DB1CA5B4BE0018BD0A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3027F1BA1CA5A5B00018BD0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3027F19D1CA5A5B00018BD0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3027F1A41CA5A5B00018BD0A;
+			remoteInfo = "Nosh Swift";
+		};
+		3027F1C51CA5A5B00018BD0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3027F19D1CA5A5B00018BD0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3027F1A41CA5A5B00018BD0A;
+			remoteInfo = "Nosh Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3027F1A51CA5A5B00018BD0A /* Nosh Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nosh Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3027F1A81CA5A5B00018BD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3027F1AA1CA5A5B00018BD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3027F1AD1CA5A5B00018BD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3027F1AF1CA5A5B00018BD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3027F1B21CA5A5B00018BD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3027F1B41CA5A5B00018BD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3027F1B91CA5A5B00018BD0A /* Nosh SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nosh SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3027F1BD1CA5A5B00018BD0A /* Nosh_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nosh_SwiftTests.swift; sourceTree = "<group>"; };
+		3027F1BF1CA5A5B00018BD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3027F1C41CA5A5B00018BD0A /* Nosh SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nosh SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3027F1C81CA5A5B00018BD0A /* Nosh_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nosh_SwiftUITests.swift; sourceTree = "<group>"; };
+		3027F1CA1CA5A5B00018BD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3027F1D61CA5B08A0018BD0A /* MainpageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainpageVC.swift; path = "Mainpage Files/MainpageVC.swift"; sourceTree = "<group>"; };
+		3027F1D81CA5B3540018BD0A /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = "Login Files/LoginVC.swift"; sourceTree = "<group>"; };
+		3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = "Signup Files/RegisterVC.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3027F1A21CA5A5B00018BD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3027F1B61CA5A5B00018BD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3027F1C11CA5A5B00018BD0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3027F19C1CA5A5B00018BD0A = {
+			isa = PBXGroup;
+			children = (
+				3027F1A71CA5A5B00018BD0A /* Nosh Swift */,
+				3027F1BC1CA5A5B00018BD0A /* Nosh SwiftTests */,
+				3027F1C71CA5A5B00018BD0A /* Nosh SwiftUITests */,
+				3027F1A61CA5A5B00018BD0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3027F1A61CA5A5B00018BD0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3027F1A51CA5A5B00018BD0A /* Nosh Swift.app */,
+				3027F1B91CA5A5B00018BD0A /* Nosh SwiftTests.xctest */,
+				3027F1C41CA5A5B00018BD0A /* Nosh SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3027F1A71CA5A5B00018BD0A /* Nosh Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3027F1A81CA5A5B00018BD0A /* AppDelegate.swift */,
+				3027F1AA1CA5A5B00018BD0A /* ViewController.swift */,
+				3027F1AC1CA5A5B00018BD0A /* Main.storyboard */,
+				3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */,
+				3027F1D81CA5B3540018BD0A /* LoginVC.swift */,
+				3027F1D61CA5B08A0018BD0A /* MainpageVC.swift */,
+				3027F1AF1CA5A5B00018BD0A /* Assets.xcassets */,
+				3027F1B11CA5A5B00018BD0A /* LaunchScreen.storyboard */,
+				3027F1B41CA5A5B00018BD0A /* Info.plist */,
+			);
+			path = "Nosh Swift";
+			sourceTree = "<group>";
+		};
+		3027F1BC1CA5A5B00018BD0A /* Nosh SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3027F1BD1CA5A5B00018BD0A /* Nosh_SwiftTests.swift */,
+				3027F1BF1CA5A5B00018BD0A /* Info.plist */,
+			);
+			path = "Nosh SwiftTests";
+			sourceTree = "<group>";
+		};
+		3027F1C71CA5A5B00018BD0A /* Nosh SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3027F1C81CA5A5B00018BD0A /* Nosh_SwiftUITests.swift */,
+				3027F1CA1CA5A5B00018BD0A /* Info.plist */,
+			);
+			path = "Nosh SwiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3027F1A41CA5A5B00018BD0A /* Nosh Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3027F1CD1CA5A5B00018BD0A /* Build configuration list for PBXNativeTarget "Nosh Swift" */;
+			buildPhases = (
+				3027F1A11CA5A5B00018BD0A /* Sources */,
+				3027F1A21CA5A5B00018BD0A /* Frameworks */,
+				3027F1A31CA5A5B00018BD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nosh Swift";
+			productName = "Nosh Swift";
+			productReference = 3027F1A51CA5A5B00018BD0A /* Nosh Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3027F1B81CA5A5B00018BD0A /* Nosh SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3027F1D01CA5A5B00018BD0A /* Build configuration list for PBXNativeTarget "Nosh SwiftTests" */;
+			buildPhases = (
+				3027F1B51CA5A5B00018BD0A /* Sources */,
+				3027F1B61CA5A5B00018BD0A /* Frameworks */,
+				3027F1B71CA5A5B00018BD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3027F1BB1CA5A5B00018BD0A /* PBXTargetDependency */,
+			);
+			name = "Nosh SwiftTests";
+			productName = "Nosh SwiftTests";
+			productReference = 3027F1B91CA5A5B00018BD0A /* Nosh SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3027F1C31CA5A5B00018BD0A /* Nosh SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3027F1D31CA5A5B00018BD0A /* Build configuration list for PBXNativeTarget "Nosh SwiftUITests" */;
+			buildPhases = (
+				3027F1C01CA5A5B00018BD0A /* Sources */,
+				3027F1C11CA5A5B00018BD0A /* Frameworks */,
+				3027F1C21CA5A5B00018BD0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3027F1C61CA5A5B00018BD0A /* PBXTargetDependency */,
+			);
+			name = "Nosh SwiftUITests";
+			productName = "Nosh SwiftUITests";
+			productReference = 3027F1C41CA5A5B00018BD0A /* Nosh SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3027F19D1CA5A5B00018BD0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "advatiya prasad";
+				TargetAttributes = {
+					3027F1A41CA5A5B00018BD0A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9VP629MSTY;
+					};
+					3027F1B81CA5A5B00018BD0A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9VP629MSTY;
+						TestTargetID = 3027F1A41CA5A5B00018BD0A;
+					};
+					3027F1C31CA5A5B00018BD0A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 9VP629MSTY;
+						TestTargetID = 3027F1A41CA5A5B00018BD0A;
+					};
+				};
+			};
+			buildConfigurationList = 3027F1A01CA5A5B00018BD0A /* Build configuration list for PBXProject "Nosh Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3027F19C1CA5A5B00018BD0A;
+			productRefGroup = 3027F1A61CA5A5B00018BD0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3027F1A41CA5A5B00018BD0A /* Nosh Swift */,
+				3027F1B81CA5A5B00018BD0A /* Nosh SwiftTests */,
+				3027F1C31CA5A5B00018BD0A /* Nosh SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3027F1A31CA5A5B00018BD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3027F1B31CA5A5B00018BD0A /* LaunchScreen.storyboard in Resources */,
+				3027F1B01CA5A5B00018BD0A /* Assets.xcassets in Resources */,
+				3027F1AE1CA5A5B00018BD0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3027F1B71CA5A5B00018BD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3027F1C21CA5A5B00018BD0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3027F1A11CA5A5B00018BD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3027F1AB1CA5A5B00018BD0A /* ViewController.swift in Sources */,
+				3027F1A91CA5A5B00018BD0A /* AppDelegate.swift in Sources */,
+				3027F1D91CA5B3540018BD0A /* LoginVC.swift in Sources */,
+				3027F1D71CA5B08A0018BD0A /* MainpageVC.swift in Sources */,
+				3027F1DB1CA5B4BE0018BD0A /* RegisterVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3027F1B51CA5A5B00018BD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3027F1BE1CA5A5B00018BD0A /* Nosh_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3027F1C01CA5A5B00018BD0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3027F1C91CA5A5B00018BD0A /* Nosh_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3027F1BB1CA5A5B00018BD0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3027F1A41CA5A5B00018BD0A /* Nosh Swift */;
+			targetProxy = 3027F1BA1CA5A5B00018BD0A /* PBXContainerItemProxy */;
+		};
+		3027F1C61CA5A5B00018BD0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3027F1A41CA5A5B00018BD0A /* Nosh Swift */;
+			targetProxy = 3027F1C51CA5A5B00018BD0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3027F1AC1CA5A5B00018BD0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3027F1AD1CA5A5B00018BD0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3027F1B11CA5A5B00018BD0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3027F1B21CA5A5B00018BD0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3027F1CB1CA5A5B00018BD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3027F1CC1CA5A5B00018BD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3027F1CE1CA5A5B00018BD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nosh Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3027F1CF1CA5A5B00018BD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nosh Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3027F1D11CA5A5B00018BD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Nosh SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nosh Swift.app/Nosh Swift";
+			};
+			name = Debug;
+		};
+		3027F1D21CA5A5B00018BD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Nosh SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nosh Swift.app/Nosh Swift";
+			};
+			name = Release;
+		};
+		3027F1D41CA5A5B00018BD0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nosh SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Nosh Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3027F1D51CA5A5B00018BD0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nosh SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Nosh Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3027F1A01CA5A5B00018BD0A /* Build configuration list for PBXProject "Nosh Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3027F1CB1CA5A5B00018BD0A /* Debug */,
+				3027F1CC1CA5A5B00018BD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3027F1CD1CA5A5B00018BD0A /* Build configuration list for PBXNativeTarget "Nosh Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3027F1CE1CA5A5B00018BD0A /* Debug */,
+				3027F1CF1CA5A5B00018BD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3027F1D01CA5A5B00018BD0A /* Build configuration list for PBXNativeTarget "Nosh SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3027F1D11CA5A5B00018BD0A /* Debug */,
+				3027F1D21CA5A5B00018BD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3027F1D31CA5A5B00018BD0A /* Build configuration list for PBXNativeTarget "Nosh SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3027F1D41CA5A5B00018BD0A /* Debug */,
+				3027F1D51CA5A5B00018BD0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3027F19D1CA5A5B00018BD0A /* Project object */;
+}
