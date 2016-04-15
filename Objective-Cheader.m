@@ -15,4 +15,3 @@
 #import <AWSCognito/AWSCognito.h>
 #import "ELCImagePickerController.h"
 #import "ELCAssetSelectionDelegate.h"
-#import <Bolts/Bolts.h>

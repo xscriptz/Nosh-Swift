@@ -26,7 +26,7 @@ class FileVC: UIViewController {
 
         
 
-        let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Dwnloads/my.json"
+        let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/my.json"
         
         let downloadingFileURL = NSURL.fileURLWithPath(downloadFilePath)
         
@@ -50,19 +50,87 @@ class FileVC: UIViewController {
                 print(downloadFilePath)
                  do {
                 let mytext = try NSString(contentsOfFile: downloadFilePath, encoding: NSUTF8StringEncoding)
-                print(mytext)
+                    let data = mytext.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion:false);
+                    let json:AnyObject = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments)
+                    
+                    
+                    if let nsDictionaryObject = json as? NSDictionary {
+                        if let swiftDictionary = nsDictionaryObject as Dictionary? {
+                            print(swiftDictionary)
+                        }
+                    }
+                    else if let nsArrayObject = json as? NSArray {
+                        if let swiftArray = nsArrayObject as Array? {
+                            print(swiftArray[0]["PRICE"])
+                        }
+                    }
+                    
+                    
+                    
+                    //print(mytext)
                 }
                  catch {print("error")/* error handling here */}
             }
             return nil
+            
+            
+            
+            
+            
 
         }
+        
+        
+        
+        /*let path = "/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/my.json"
+        
+        //let downloadingFileURL = NSURL.fileURLWithPath(downloadFilePath)
+        let bundle = NSBundle.mainBundle()
+        //let path = bundle.pathForResource("/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/my.json", ofType: "json")
+        var error:NSError?
+        var data:NSData = NSData(contentsOfFile: path)!
+        do
+        {
+            let json:AnyObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
+            // JSONObjectWithData returns AnyObject so the first thing to do is to downcast this to a known type
+            if let nsDictionaryObject = json as? NSDictionary {
+                if let swiftDictionary = nsDictionaryObject as Dictionary? {
+                    print(swiftDictionary)
+                }
+            }
+            else if let nsArrayObject = json as? NSArray {
+                if let swiftArray = nsArrayObject as Array? {
+                    print(swiftArray[0]["PRICE"])
+                }
+            }
+            
+        }
+        catch
+        {
+            print(error)
+        }
+        */
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // Do any additional setup after loading the view.
         
         
         // Downloading Image files
         
-        start()
+        //start()
 
         
         
@@ -72,12 +140,12 @@ class FileVC: UIViewController {
     }
     
     
-    func start(){
+    /*func start(){
         
         let S3BucketName: String = "nosh-swift"
         let S3DownloadKeyName: String = "Bacon Buffalo Ranch McCh.png"
         
-        let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Dwnloads/myranch.png"
+        let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/myranch.png"
         
         let downloadingFileURL = NSURL.fileURLWithPath(downloadFilePath)
         
@@ -132,7 +200,7 @@ class FileVC: UIViewController {
             }
             return nil;
         }
-    }
+    }*/
 
 }
 
