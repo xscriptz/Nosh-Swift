@@ -63,7 +63,7 @@
 		3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = "Signup Files/RegisterVC.swift"; sourceTree = "<group>"; };
 		3049CCC41CBC5D910001B5E0 /* ELCImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
 		3049CCC51CBC60430001B5E0 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
-		3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileVC.swift; path = "Nosh Swift/FileDwn/FileVC.swift"; sourceTree = "<group>"; };
+		3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileVC.swift; path = FileDwn/FileVC.swift; sourceTree = "<group>"; };
 		30D700891CB30BDC0024B7B3 /* Nosh Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nosh Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Objective-Cheader.m"; sourceTree = "<group>"; };
 		51532F655EEE43F7AFDA5E1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,7 +99,6 @@
 		3027F19C1CA5A5B00018BD0A = {
 			isa = PBXGroup;
 			children = (
-				3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */,
 				30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */,
 				3027F1A71CA5A5B00018BD0A /* Nosh Swift */,
 				3027F1BC1CA5A5B00018BD0A /* Nosh SwiftTests */,
@@ -125,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3027F1A81CA5A5B00018BD0A /* AppDelegate.swift */,
+				3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */,
 				301B77731CBC4E1300BC952B /* Constants.swift */,
 				301B77751CBC4F9900BC952B /* DownloadVC.swift */,
 				3027F1AA1CA5A5B00018BD0A /* ViewController.swift */,

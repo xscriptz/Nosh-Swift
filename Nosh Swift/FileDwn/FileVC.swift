@@ -10,6 +10,9 @@ import UIKit
 
 class FileVC: UIViewController {
 
+    @IBOutlet weak var countlabel: UILabel!
+    @IBOutlet weak var itemimg: UIImageView!
+    var counter = 0
     //@IBOutlet weak var imageView: UIImageView!
     var myArr : NSArray = []
     
@@ -21,7 +24,10 @@ class FileVC: UIViewController {
     var completionHandler: AWSS3TransferUtilityDownloadCompletionHandlerBlock?
 
     override func viewDidLoad() {
+        itemimg.alpha = 0.2
+        itemimg.hidden = true
         print("Hello")
+        
         super.viewDidLoad()
 
         
@@ -143,7 +149,9 @@ class FileVC: UIViewController {
     
     @IBAction func bbmcButtonClicked(sender: UIButton) {
         
-        
+        itemimg.hidden = false
+        counter += 1
+        countlabel.text = String(counter)
         let cost = String(myArr[5]["PRICE"])
         print(cost)
     }
