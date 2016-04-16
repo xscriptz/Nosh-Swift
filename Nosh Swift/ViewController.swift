@@ -10,8 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+var timer = NSTimer()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -20,6 +25,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func timerAction() {
+        
+        let mapViewControllerObj = self.storyboard?.instantiateViewControllerWithIdentifier("MainpageVCidentifier") as? MainpageVC
+        self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+        
+    }
+    
+    
 
 
 }
