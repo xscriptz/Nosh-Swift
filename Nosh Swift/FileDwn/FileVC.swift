@@ -10,16 +10,16 @@ import UIKit
 
 class FileVC: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    //@IBOutlet weak var imageView: UIImageView!
+    var myArr : NSArray = []
     
-    @IBOutlet weak var statusLabel: UILabel!
+    //@IBOutlet weak var statusLabel: UILabel!
     
-    @IBOutlet weak var progressView: UIProgressView!
+    //@IBOutlet weak var progressView: UIProgressView!
     //var progressView: UIProgressView!
     
     var completionHandler: AWSS3TransferUtilityDownloadCompletionHandlerBlock?
 
-    
     override func viewDidLoad() {
         print("Hello")
         super.viewDidLoad()
@@ -61,9 +61,11 @@ class FileVC: UIViewController {
                     }
                     else if let nsArrayObject = json as? NSArray {
                         if let swiftArray = nsArrayObject as Array? {
+                            self.myArr = swiftArray
                             print(swiftArray[0]["PRICE"])
                         }
                     }
+                    
                     
                     
                     
@@ -139,7 +141,12 @@ class FileVC: UIViewController {
         
     }
     
-    
+    @IBAction func bbmcButtonClicked(sender: UIButton) {
+        
+        
+        let cost = String(myArr[5]["PRICE"])
+        print(cost)
+    }
     /*func start(){
         
         let S3BucketName: String = "nosh-swift"
