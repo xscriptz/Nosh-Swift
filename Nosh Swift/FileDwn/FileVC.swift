@@ -13,7 +13,6 @@ class FileVC: UIViewController {
     @IBOutlet weak var countlabel: UILabel!
     @IBOutlet weak var itemimg: UIImageView!
     var counter = 0
-    var arrTrack = Int(0)
     //@IBOutlet weak var imageView: UIImageView!
     var myArr : NSArray = []
     var cartArr = NSMutableArray()
