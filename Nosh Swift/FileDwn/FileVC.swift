@@ -13,10 +13,11 @@ class FileVC: UIViewController {
     @IBOutlet weak var countlabel: UILabel!
     @IBOutlet weak var itemimg: UIImageView!
     var counter = 0
+    var arrTrack = Int(0)
     //@IBOutlet weak var imageView: UIImageView!
     var myArr : NSArray = []
-    
-    //@IBOutlet weak var statusLabel: UILabel!
+    var cartArr = NSMutableArray()
+    @IBOutlet weak var statusLabel: UILabel!
     
     //@IBOutlet weak var progressView: UIProgressView!
     //var progressView: UIProgressView!
@@ -152,9 +153,66 @@ class FileVC: UIViewController {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let cost = String(myArr[5]["PRICE"])
-        print(cost)
+        let item = String(myArr[5]["ITEM"])
+        cartArr.addObject(item)
+        
+        print(item)
+        print(cartArr)
+
     }
+    
+    @IBAction func bchb(sender: UIButton) {
+        itemimg.hidden = false
+        counter += 1
+        countlabel.text = String(counter)
+        let item = String(myArr[0]["ITEM"])
+        cartArr.addObject(item)
+
+    }
+    @IBAction func brmch(sender: UIButton) {
+        itemimg.hidden = false
+        counter += 1
+        countlabel.text = String(counter)
+        let item = String(myArr[4]["ITEM"])
+        cartArr.addObject(item)
+    }
+    @IBAction func mch(sender: AnyObject) {
+        itemimg.hidden = false
+        counter += 1
+        countlabel.text = String(counter)
+        let item = String(myArr[3]["ITEM"])
+        cartArr.addObject(item)
+    }
+    @IBAction func pbcs(sender: UIButton) {
+        itemimg.hidden = false
+        counter += 1
+        countlabel.text = String(counter)
+        let item = String(myArr[2]["ITEM"])
+        cartArr.addObject(item)
+    }
+    @IBAction func pgbcs(sender: UIButton) {
+        itemimg.hidden = false
+        counter += 1
+        countlabel.text = String(counter)
+        let item = String(myArr[1]["ITEM"])
+        cartArr.addObject(item)
+    }
+    
+    
+    
+ 
+        override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+            if (segue.identifier == "segueTest") {
+                var svc = segue!.destinationViewController as! CartVC;
+                svc.toPass = cartArr
+                
+                
+            }
+        }
+    
+    
+    
+    
     /*func start(){
         
         let S3BucketName: String = "nosh-swift"
