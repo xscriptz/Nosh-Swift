@@ -18,8 +18,10 @@ class PayVC: UIViewController {
     @IBOutlet weak var cvcText: UITextField!
     
     @IBOutlet weak var progressbar: UIActivityIndicatorView!
+    var que : Int = 0
     var toPass : Int = 0
     var amodata : Int = 0
+    var timr : Int =  0
     override func viewDidLoad() {
         super.viewDidLoad()
         progressbar.hidden = true
@@ -48,7 +50,7 @@ class PayVC: UIViewController {
         var exMonth : Int = 0
         var exxYea : Int = 0
         var cvcdat : Int = 0
-        
+        timr = 5
         do
         {
             cardNum = Int(cardnoText.text!.stringByReplacingOccurrencesOfString("-", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil))!
@@ -126,15 +128,37 @@ class PayVC: UIViewController {
         else
         {
             print("Transaction Successful!")
-            alert.message = "Transaction Successful!"
-            self.presentViewController(alert, animated: true, completion: nil)
+            //alert.message = "Transaction Successful!"
+            que += 1
+            //self.presentViewController(alert, animated: true, completion: nil)
+            
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+            let vc : OrderMain = mainStoryboard.instantiateViewControllerWithIdentifier("OrdrMainid") as! OrderMain
+                vc.queues  = que
+                vc.tima = timr
+                self.presentViewController(vc, animated: true, completion: nil)
+            
             
         }
         
         
     }
     
-    
+    /*override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        let next = self.storyboard?.instantiateViewControllerWithIdentifier("OrdrMainid") as! OrderMain
+        self.presentViewController(next, animated: false, completion: nil)
+        next.tima = timr
+        next.queues = que
+        self.presentViewController(next, animated: false, completion: nil)
+
+        
+       /* if (segue.identifier == "segueorder") {
+            var svc = segue!.destinationViewController as! OrderMain;
+            svc.toPass = que
+            svc.dataPassed = timr
+            
+        }*/
+    }*/
     
     
 
