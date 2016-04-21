@@ -13,6 +13,7 @@ class FileVC: UIViewController {
     @IBOutlet weak var countlabel: UILabel!
     @IBOutlet weak var itemimg: UIImageView!
     var counter = 0
+    var amoCounter : Int = 0
     //@IBOutlet weak var imageView: UIImageView!
     var myArr : NSArray = []
     var cartArr = NSMutableArray()
@@ -30,7 +31,7 @@ class FileVC: UIViewController {
         
         super.viewDidLoad()
 
-        
+        /*
 
         let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/my.json"
         
@@ -86,7 +87,7 @@ class FileVC: UIViewController {
             
             
 
-        }
+        }*/
         
         
         
@@ -152,11 +153,12 @@ class FileVC: UIViewController {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let item = String(myArr[5]["ITEM"])
-        cartArr.addObject(item)
+        //let item = String(myArr[5]["ITEM"])
         
-        print(item)
-        print(cartArr)
+        cartArr.addObject("Bacon Buffalo Ranch McChicken")
+        amoCounter += 100
+        //print(item)
+        //print(cartArr)
 
     }
     
@@ -164,37 +166,42 @@ class FileVC: UIViewController {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let item = String(myArr[0]["ITEM"])
-        cartArr.addObject(item)
+        //let item = String(myArr[0]["ITEM"])
+        amoCounter += 12
+        cartArr.addObject("Bacon Clubhouse Burger")
 
     }
     @IBAction func brmch(sender: UIButton) {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let item = String(myArr[4]["ITEM"])
-        cartArr.addObject(item)
+        //let item = String(myArr[4]["ITEM"])
+        amoCounter += 6
+        cartArr.addObject("Buffalo Ranch McChicken")
     }
     @IBAction func mch(sender: AnyObject) {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let item = String(myArr[3]["ITEM"])
-        cartArr.addObject(item)
+        //let item = String(myArr[3]["ITEM"])
+        amoCounter += 18
+        cartArr.addObject("McChicken")
     }
     @IBAction func pbcs(sender: UIButton) {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let item = String(myArr[2]["ITEM"])
-        cartArr.addObject(item)
+        //let item = String(myArr[2]["ITEM"])
+        amoCounter += 30
+        cartArr.addObject("Premium Buttermilk Crispy Chicken Bacon Clubhouse Sandwich")
     }
     @IBAction func pgbcs(sender: UIButton) {
         itemimg.hidden = false
         counter += 1
         countlabel.text = String(counter)
-        let item = String(myArr[1]["ITEM"])
-        cartArr.addObject(item)
+        //let item = String(myArr[1]["ITEM"])
+        amoCounter += 20
+        cartArr.addObject("Premium Grilled Chicken Bacon Clubhouse Sandwich")
     }
     
     
@@ -203,8 +210,8 @@ class FileVC: UIViewController {
         override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
             if (segue.identifier == "segueTest") {
                 var svc = segue!.destinationViewController as! CartVC;
-                svc.toPass = cartArr
-                
+                svc.toPass = amoCounter
+                svc.dataPassed = cartArr
                 
             }
         }

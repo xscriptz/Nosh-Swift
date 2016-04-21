@@ -12,9 +12,14 @@ class CartVC: UIViewController {
     
     @IBOutlet weak var cashLabel: UILabel!
     
-    var toPass:NSMutableArray = []
+    var toPass:Int = 0
     
     var myArr : NSArray = []
+    
+    var dataPassed = NSMutableArray()
+    var passindata : Int = 0
+    
+    var disArray = NSMutableArray()
     
     var costString : String = ""
     
@@ -25,8 +30,11 @@ class CartVC: UIViewController {
         super.viewDidLoad()
         cashLabel.text = "0"
         print(toPass)
-        
-        
+        passindata = toPass
+        cashLabel.text = String(toPass)
+        disArray = dataPassed
+        print(disArray)
+        /*
         
         do {
             let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/my.json"
@@ -53,23 +61,37 @@ class CartVC: UIViewController {
             //print(mytext)
         }
         catch {print("error")/* error handling here */}
-        for i in 0..<toPass.count {
-            for j in 0..<myArr.count
+        for i in 0..<self.toPass.count {
+            for j in 0..<self.myArr.count
             {
                 if (toPass.objectAtIndex(i)).isEqualToString(String(myArr[j]["ITEM"]))
                 {
-                    costString = String(myArr[j]["PRICE"]).stringByReplacingOccurrencesOfString("$", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
-                    costInt += Int(costString)!
-                    print(costInt)
+                    self.costString = String(self.myArr[j]["PRICE"]).stringByReplacingOccurrencesOfString("$", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+                    if let tempo = Int(self.costString)
+                    {
+                        self.costInt += tempo
+                    }
+                    //costInt += Int(costString)!
+                    print(self.costString)
+                    print(self.costInt)
                 }
             }
         }
-        cashLabel.text = String(costInt)
-        
+        cashLabel.text = String(self.costInt)
+        */
 
         
         
         
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "seguepay") {
+            var svc = segue!.destinationViewController as! PayVC;
+            svc.toPass = passindata
+            
+        }
     }
     
 

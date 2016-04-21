@@ -21,6 +21,7 @@
 		3027F1D91CA5B3540018BD0A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1D81CA5B3540018BD0A /* LoginVC.swift */; };
 		3027F1DB1CA5B4BE0018BD0A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */; };
 		3049CCCB1CBEDE3B0001B5E0 /* FileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */; };
+		309FD3EA1CC96173008B903F /* PayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FD3E91CC96173008B903F /* PayVC.swift */; };
 		30D7008B1CB30BDD0024B7B3 /* Objective-Cheader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */; };
 		D7ECAD03731CDCD94E397BE4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233FE94564D10D92070525C0 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		3049CCC41CBC5D910001B5E0 /* ELCImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
 		3049CCC51CBC60430001B5E0 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
 		3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileVC.swift; path = FileDwn/FileVC.swift; sourceTree = "<group>"; };
+		309FD3E91CC96173008B903F /* PayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayVC.swift; path = "Payment Files/PayVC.swift"; sourceTree = "<group>"; };
 		30D700891CB30BDC0024B7B3 /* Nosh Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nosh Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Objective-Cheader.m"; sourceTree = "<group>"; };
 		51532F655EEE43F7AFDA5E1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				301B77751CBC4F9900BC952B /* DownloadVC.swift */,
 				3027F1AA1CA5A5B00018BD0A /* ViewController.swift */,
 				3027F1AC1CA5A5B00018BD0A /* Main.storyboard */,
+				309FD3E91CC96173008B903F /* PayVC.swift */,
 				3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */,
 				3027F1D81CA5B3540018BD0A /* LoginVC.swift */,
 				3027F1D61CA5B08A0018BD0A /* MainpageVC.swift */,
@@ -368,6 +371,7 @@
 				3027F1A91CA5A5B00018BD0A /* AppDelegate.swift in Sources */,
 				3027F1D91CA5B3540018BD0A /* LoginVC.swift in Sources */,
 				3027F1D71CA5B08A0018BD0A /* MainpageVC.swift in Sources */,
+				309FD3EA1CC96173008B903F /* PayVC.swift in Sources */,
 				301B77761CBC4F9900BC952B /* DownloadVC.swift in Sources */,
 				3049CCCB1CBEDE3B0001B5E0 /* FileVC.swift in Sources */,
 				301B77741CBC4E1300BC952B /* Constants.swift in Sources */,
