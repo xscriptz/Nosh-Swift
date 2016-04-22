@@ -131,12 +131,18 @@ class PayVC: UIViewController {
             //alert.message = "Transaction Successful!"
             que += 1
             //self.presentViewController(alert, animated: true, completion: nil)
-            
+            do{
+                
             let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc : OrderMain = mainStoryboard.instantiateViewControllerWithIdentifier("OrdrMainid") as! OrderMain
+            let vc : MainpageVC = mainStoryboard.instantiateViewControllerWithIdentifier("MainpageVCidentifier") as! MainpageVC
                 vc.queues  = que
                 vc.tima = timr
-                self.presentViewController(vc, animated: true, completion: nil)
+            self.presentViewController(vc, animated: true, completion: nil)
+            }
+            catch
+            {
+                print(error)
+            }
             
             
         }

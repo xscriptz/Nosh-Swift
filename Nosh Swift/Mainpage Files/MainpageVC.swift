@@ -11,9 +11,13 @@ import UIKit
 class MainpageVC: UIViewController {
 
     @IBOutlet weak var usernameLabel: UILabel!
+    var queues : Int = 0
+    var tima : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(queues)
+        print(tima)
         // Do any additional setup after loading the view.
     }
 
