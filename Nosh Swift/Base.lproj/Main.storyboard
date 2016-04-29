@@ -256,16 +256,20 @@
                                     <segue destination="zNP-MW-OKH" kind="push" identifier="seguepay" id="8QC-4F-YzV"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="s3o-t8-dWM">
-                                <rect key="frame" x="0.0" y="488" width="414" height="248"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="usu-UI-gCv">
+                                <rect key="frame" x="0.0" y="454" width="414" height="282"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ybg-xQ-0L8"/>
                     <connections>
                         <outlet property="cashLabel" destination="acP-HE-s69" id="aoB-1D-Um8"/>
+                        <outlet property="itembyitmLabel" destination="usu-UI-gCv" id="IHw-gT-4mU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nTf-ke-MME" userLabel="First Responder" sceneMemberID="firstResponder"/>

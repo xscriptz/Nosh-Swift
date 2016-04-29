@@ -25,6 +25,14 @@ class CartVC: UIViewController {
     
     var costInt : Int = 0
     
+    var Lcount : Int = 1
+    
+    var emstr : String = ""
+    
+    var mutedstring : String = ""
+    
+    @IBOutlet weak var itembyitmLabel: UILabel!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -33,8 +41,19 @@ class CartVC: UIViewController {
         passindata = toPass
         cashLabel.text = String(toPass)
         disArray = dataPassed
-        print(disArray)
+        itembyitmLabel.numberOfLines = 0
+        for i in 0..<disArray.count
+        {
+            
+            var stringo = String(Lcount)
+            var mystr = String(disArray[i])
+            mutedstring = emstr + stringo + ". " + mystr + "\n"
+            emstr = mutedstring
+            Lcount += 1
 
+        }
+        print(emstr)
+        itembyitmLabel.text = emstr
         /*
         
         do {
