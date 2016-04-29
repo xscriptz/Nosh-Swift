@@ -31,7 +31,7 @@ class FileVC: UIViewController {
         
         super.viewDidLoad()
 
-        /*
+        
 
         let downloadFilePath = "/Users/advi/Desktop/Nosh-Swift/Nosh Swift/Dwnloads/my.json"
         
@@ -41,7 +41,7 @@ class FileVC: UIViewController {
 
         downloadRequest.bucket = "nosh-swift"
 
-        downloadRequest.key = "mcdonalstest1.json" //fileName on s3
+        downloadRequest.key = "my.json" //fileName on s3
 
         downloadRequest.downloadingFileURL = downloadingFileURL
         
@@ -87,7 +87,7 @@ class FileVC: UIViewController {
             
             
 
-        }*/
+        }
         
         
         
@@ -154,7 +154,6 @@ class FileVC: UIViewController {
         counter += 1
         countlabel.text = String(counter)
         //let item = String(myArr[5]["ITEM"])
-        
         cartArr.addObject("Bacon Buffalo Ranch McChicken")
         amoCounter += 100
         //print(item)

@@ -21,10 +21,12 @@
 		3027F1D91CA5B3540018BD0A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1D81CA5B3540018BD0A /* LoginVC.swift */; };
 		3027F1DB1CA5B4BE0018BD0A /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3027F1DA1CA5B4BE0018BD0A /* RegisterVC.swift */; };
 		3049CCCB1CBEDE3B0001B5E0 /* FileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */; };
+		309102D81CD2E03300C420CF /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309102D71CD2E03300C420CF /* QRCode.framework */; };
+		309102D91CD2E03300C420CF /* QRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 309102D71CD2E03300C420CF /* QRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		309FD3EA1CC96173008B903F /* PayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FD3E91CC96173008B903F /* PayVC.swift */; };
 		309FD3EC1CC96F4D008B903F /* OrderMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309FD3EB1CC96F4D008B903F /* OrderMain.swift */; };
 		30D7008B1CB30BDD0024B7B3 /* Objective-Cheader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */; };
-		D7ECAD03731CDCD94E397BE4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 233FE94564D10D92070525C0 /* libPods.a */; };
+		4999745505D8DA2CDBE32D99 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDB497AF1CB8A2DB7499719 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		309102DA1CD2E03300C420CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				309102D91CD2E03300C420CF /* QRCode.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		233FE94564D10D92070525C0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		301B77731CBC4E1300BC952B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		301B77751CBC4F9900BC952B /* DownloadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadVC.swift; sourceTree = "<group>"; };
 		302027791CC3000900A3F031 /* CartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
@@ -68,12 +83,14 @@
 		3049CCC41CBC5D910001B5E0 /* ELCImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
 		3049CCC51CBC60430001B5E0 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
 		3049CCCA1CBEDE3B0001B5E0 /* FileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FileVC.swift; path = FileDwn/FileVC.swift; sourceTree = "<group>"; };
+		309102D71CD2E03300C420CF /* QRCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCode.framework; path = Carthage/Build/iOS/QRCode.framework; sourceTree = "<group>"; };
 		309FD3E91CC96173008B903F /* PayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PayVC.swift; path = "Payment Files/PayVC.swift"; sourceTree = "<group>"; };
 		309FD3EB1CC96F4D008B903F /* OrderMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderMain.swift; path = "Mainpage Files/OrderMain.swift"; sourceTree = "<group>"; };
 		30D700891CB30BDC0024B7B3 /* Nosh Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nosh Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Objective-Cheader.m"; sourceTree = "<group>"; };
 		51532F655EEE43F7AFDA5E1D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C57B3E80EEA65F2866EF7518 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EBDB497AF1CB8A2DB7499719 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7ECAD03731CDCD94E397BE4 /* libPods.a in Frameworks */,
+				309102D81CD2E03300C420CF /* QRCode.framework in Frameworks */,
+				4999745505D8DA2CDBE32D99 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +123,7 @@
 		3027F19C1CA5A5B00018BD0A = {
 			isa = PBXGroup;
 			children = (
+				309102D71CD2E03300C420CF /* QRCode.framework */,
 				30D7008A1CB30BDD0024B7B3 /* Objective-Cheader.m */,
 				3027F1A71CA5A5B00018BD0A /* Nosh Swift */,
 				3027F1BC1CA5A5B00018BD0A /* Nosh SwiftTests */,
@@ -171,7 +190,7 @@
 		AFFD9F141EBFB0C7A43494E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				233FE94564D10D92070525C0 /* libPods.a */,
+				EBDB497AF1CB8A2DB7499719 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,6 +217,8 @@
 				3027F1A31CA5A5B00018BD0A /* Resources */,
 				F5F168A28068D83B38DAA1CE /* Embed Pods Frameworks */,
 				B2CF03D5B190A2F762783FC1 /* Copy Pods Resources */,
+				309102DA1CD2E03300C420CF /* Embed Frameworks */,
+				309102DB1CD2E08F00C420CF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -332,6 +353,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		309102DB1CD2E08F00C420CF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 		B2CF03D5B190A2F762783FC1 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -523,6 +557,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Nosh Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-Swift";
@@ -538,6 +576,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Nosh Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "my.Nosh-Swift";

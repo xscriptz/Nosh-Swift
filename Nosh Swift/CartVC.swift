@@ -34,6 +34,7 @@ class CartVC: UIViewController {
         cashLabel.text = String(toPass)
         disArray = dataPassed
         print(disArray)
+
         /*
         
         do {
@@ -90,7 +91,8 @@ class CartVC: UIViewController {
         if (segue.identifier == "seguepay") {
             var svc = segue!.destinationViewController as! PayVC;
             svc.toPass = passindata
-            
+            svc.dataPassed = disArray
+
         }
     }
     

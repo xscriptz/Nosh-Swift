@@ -22,14 +22,16 @@ class PayVC: UIViewController {
     var toPass : Int = 0
     var amodata : Int = 0
     var timr : Int =  0
+    var dataPassed = NSMutableArray()
+    var mydatqrarr = NSMutableArray()
+    var randdat : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         progressbar.hidden = true
         amodata = toPass
-        
+        mydatqrarr = dataPassed
         
         AmountLabel.text = String(amodata)
-        
         
         
         
@@ -128,6 +130,7 @@ class PayVC: UIViewController {
         else
         {
             print("Transaction Successful!")
+            randdat = Int(arc4random_uniform(6) + 1)
             //alert.message = "Transaction Successful!"
             que += 1
             //self.presentViewController(alert, animated: true, completion: nil)
@@ -137,6 +140,7 @@ class PayVC: UIViewController {
             let vc : MainpageVC = mainStoryboard.instantiateViewControllerWithIdentifier("MainpageVCidentifier") as! MainpageVC
                 vc.queues  = que
                 vc.tima = timr
+                vc.randonum = randdat
             self.presentViewController(vc, animated: true, completion: nil)
             }
             catch
