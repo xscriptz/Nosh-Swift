@@ -19,6 +19,9 @@ class CartVC: UIViewController {
     var dataPassed = NSMutableArray()
     var passindata : Int = 0
     
+    
+    
+    
     var disArray = NSMutableArray()
     
     var costString : String = ""
@@ -104,6 +107,29 @@ class CartVC: UIViewController {
         
         
     }
+    
+    @IBAction func ClearButtonPressed(sender: UIButton) {
+    
+        emstr = ""
+        itembyitmLabel.text = emstr
+        toPass = 0
+        self.disArray.removeAllObjects()
+        
+        do{
+            
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+            let vc : FileVC = mainStoryboard.instantiateViewControllerWithIdentifier("MenuStoryboard") as! FileVC
+            vc.amoCounter  = 0
+            vc.cartArr = disArray
+            //self.presentViewController(vc, animated: true, completion: nil)
+        }
+        catch
+        {
+            print(error)
+        }
+    
+    }
+
     
     
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {

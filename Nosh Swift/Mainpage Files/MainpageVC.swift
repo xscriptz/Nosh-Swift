@@ -17,11 +17,17 @@ class MainpageVC: UIViewController {
     var tima : Int = 0
     var timer = NSTimer()
     var counter = 0
+    var seccounter = 60
+    
+    @IBOutlet weak var ColonLabel: UILabel!
+    
+    @IBOutlet weak var STLabel: UILabel!
     
     @IBOutlet weak var QRimage: UIImageView!
     var randonum : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        ColonLabel.hidden = true
         counter = tima
         if(randonum > 0)
         {
@@ -33,6 +39,7 @@ class MainpageVC: UIViewController {
             let image = UIImage(CIImage: filter!.outputImage!)
             QRimage.image = image
             self.view.addSubview(QRimage)*/
+            ColonLabel.hidden = false
 
             let ciImageFromQRCode = generateQRCodeFromString(String(randonum))
             let scaleX = (QRimage.frame.size.width / ciImageFromQRCode.extent.size.width)
@@ -57,7 +64,17 @@ class MainpageVC: UIViewController {
     
     func updateCounter() {
         if(counter > 0) {
-        TLabel.text = String(counter--)
+          if(seccounter > 0)
+          {
+            
+            STLabel.text = String(seccounter--)
+            }
+          else{
+            TLabel.text = String(counter--)
+            seccounter = 60
+            counter -= 1
+
+            }
         }
     }
     
