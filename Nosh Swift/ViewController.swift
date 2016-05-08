@@ -10,14 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var progressUI: UIActivityIndicatorView!
 var timer = NSTimer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        progressUI.hidden = true
+
         
         
         timer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
-        
+        progressUI.hidden = false
+        progressUI.startAnimating()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,7 +31,8 @@ var timer = NSTimer()
         // Dispose of any resources that can be recreated.
     }
     func timerAction() {
-        
+        progressUI.stopAnimating()
+
         let mapViewControllerObj = self.storyboard?.instantiateViewControllerWithIdentifier("MainpageVCidentifier") as? MainpageVC
         self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
         

@@ -69,7 +69,6 @@ class FileVC: UIViewController {
                     else if let nsArrayObject = json as? NSArray {
                         if let swiftArray = nsArrayObject as Array? {
                             self.myArr = swiftArray
-                            print(swiftArray[0]["PRICE"])
                         }
                     }
                     
